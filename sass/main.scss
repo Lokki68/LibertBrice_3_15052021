@@ -1,1 +1,52 @@
+@import "./utils/variables";
 
+
+/** Header **/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img{
+    width: 50%;
+    }
+}
+
+/**Bar de recherche **/
+
+.searchBar_input{
+    border: none;
+    
+    &::placeholder{
+        color: black;
+        font-weight: bold;
+    }
+}
+
+
+/** Présentation **/
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: $h1_size;
+        text-align: center;
+        font-weight: ;
+    }
+}
+
+.presentation_title{
+    display: flex;
+    justify-content: center;
+    
+}
