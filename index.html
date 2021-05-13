@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Police -->
+    <!-- Police / FontAwesome -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./public/css/main.css">
 
@@ -16,12 +16,35 @@
 </head>
 <body>
     <header>
+
         <!-- Logo -->
+        <div class="header_logo">
+            <img src="public/img/logo/ohmyfood.png" alt="Logo Oh My Food">
+        </div>
+
         <!-- Recherche -->
+        <form class="searchBar">
+            <label class="searchBar_logo">
+                <i class="fas fa-map-marker-alt"></i>
+            </label>
+            <input type="search" class="searchBar_input" placeholder="Paris, Belleville">
+        </form>
+
         <!-- Présentation -->
+        <div class="presentaion">
             <!-- Présentation - Titre -->
+            <h1 class="presentation_title">
+                Réserver le menu qui convient
+            </h1>
             <!-- Présentation - Paragraphe -->
+            <p class="presentation_paragraphe">
+                Découvrez des restaurants d'exception, séléctionnés par nos soins.
+            </p>
             <!-- Présentation - Button -->
+            <button class="presentation_button">
+                Explorer nos restaurants
+            </button>
+        </div>
     </header>
 
     <main>
