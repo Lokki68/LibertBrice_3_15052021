@@ -1,0 +1,20 @@
+{
+  "name": "libertbrice_3_15052021",
+  "version": "1.0.0",
+  "description": "LibertBrice_3_15052021",
+  "main": "index.js",
+  "scripts": {
+
+    "sass" : "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lokki68/LibertBrice_3_15052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lokki68/LibertBrice_3_15052021/issues"
+  },
+  "homepage": "https://github.com/Lokki68/LibertBrice_3_15052021#readme"
+}
