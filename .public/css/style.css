@@ -1,3 +1,10 @@
-
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header_logo img {
+  width: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
