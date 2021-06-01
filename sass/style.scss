@@ -1,8 +1,9 @@
 @import "./base/_reset";
 @import "./utils/variables";
 
+// Header //
 .header{
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $text-title;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -21,6 +22,7 @@
     }
 }
 
+// Header Search Bar //
 .searchBar {
     display: flex;
     justify-content: center;
