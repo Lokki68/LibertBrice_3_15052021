@@ -69,7 +69,7 @@
   }
 
   &_button {
-    font-family: "Roboto", sans-serif;
+    font-family: $text-principal;
     font-weight: 600;
     color: #fff;
     padding: 15px 30px;
@@ -93,11 +93,35 @@
 
 // Fonctionnement //
 
-.fonctionnement {
+// Titre //
+
+.fonctionement {
   font-family: $text-principal;
   margin-top: 2em;
 
-  &_title h2 {
-    font-weight: 600;
+  &_title  h2 {
+    font-weight: 700;
+    font-size: 1.5em;
   }
+}
+
+// Carte Fonctionnement //
+.fonctionnement_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-: center;
+  width: 20em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: 1px solid transparent;
+  border-radius: 1em;
+  background-color: rgba($color: #e3dfde, $alpha: 0.3);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }

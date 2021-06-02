@@ -17,13 +17,11 @@ button, input, select {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img, video {
@@ -46,47 +44,29 @@ td, th {
 
 .header {
   font-family: "Shrikhand", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .header_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 95%;
   padding: 10px 0;
 }
-
 .header_logo img {
   width: 50%;
 }
 
 .searchBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: rgba(227, 223, 222, 0.7);
   border-top: 0.2px solid rgba(0, 0, 0, 0.15);
 }
-
 .searchBar_input {
   margin-left: 5px;
   width: 8em;
@@ -96,35 +76,23 @@ td, th {
 }
 
 .presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background: rgba(227, 223, 222, 0.2);
   padding-bottom: 3em;
 }
-
 .presentation_text {
   width: 80%;
   margin-top: 4em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .presentation_text h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
 }
-
 .presentation_text h3 {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -132,7 +100,6 @@ td, th {
   font-weight: 200;
   margin-top: 2em;
 }
-
 .presentation_button {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -144,17 +111,37 @@ td, th {
   border-radius: 25px;
   margin-top: 30px;
 }
-
 .presentation_button:hover {
   cursor: pointer;
 }
 
-.fonctionnement {
+.fonctionement {
   font-family: "Roboto", sans-serif;
   margin-top: 2em;
 }
-
-.fonctionnement_title h2 {
-  font-weight: 600;
+.fonctionement_title h2 {
+  font-weight: 700;
+  font-size: 1.5em;
 }
+
+.fonctionnement_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-: center;
+  width: 20em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: 1px solid transparent;
+  border-radius: 1em;
+  background-color: rgba(227, 223, 222, 0.3);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 /*# sourceMappingURL=style.css.map */
