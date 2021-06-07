@@ -44,6 +44,7 @@ td, th {
 
 .header {
   font-family: "Shrikhand", sans-serif;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,6 +76,15 @@ td, th {
   opacity: 0.7;
 }
 
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -84,7 +94,7 @@ td, th {
 }
 .presentation_text {
   width: 80%;
-  margin-top: 4em;
+  margin-top: 45px;
   align-items: center;
 }
 .presentation_text h2 {
@@ -98,29 +108,33 @@ td, th {
   text-align: center;
   font-size: 15px;
   font-weight: 200;
-  margin-top: 2em;
+  margin-top: 24px;
 }
 .presentation_button {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #fff;
-  padding: 15px 30px;
+  height: 50px;
+  width: 218px;
   background: #ff79da;
   background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
   border: none;
   border-radius: 25px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .presentation_button:hover {
   cursor: pointer;
 }
 
-.fonctionement {
+.fonctionnement {
   font-family: "Roboto", sans-serif;
-  margin-top: 2em;
+  height: 440px;
+  margin-top: 52px;
 }
-.fonctionement_title h2 {
+.fonctionnement_title h2 {
   font-weight: 700;
+  margin-left: 1em;
+  margin-bottom: 1em;
   font-size: 1.5em;
 }
 
@@ -130,18 +144,116 @@ td, th {
   align-items: center;
 }
 
-.card {
+.card_fonctionnement {
   display: flex;
   flex-direction: row;
-  justify-: center;
-  width: 20em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 325px;
+  height: 75px;
+  margin: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   border: 1px solid transparent;
-  border-radius: 1em;
-  background-color: rgba(227, 223, 222, 0.3);
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  border-radius: 20px;
+  background-color: rgba(227, 223, 222, 0.2);
+  box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
+}
+.card_fonctionnement i {
+  padding-left: 2em;
+  padding-right: 2em;
+  color: grey;
+}
+
+.card:hover {
+  background-color: #ebe1f7;
+}
+.card:hover i {
+  color: #9356dc;
+}
+
+.index {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  left: -10px;
+  top: 35%;
+  background-color: #9356dc;
+  color: #fff;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50%;
+}
+
+.text {
+  font-weight: 600;
+}
+
+.restaurant {
+  background-color: rgba(227, 223, 222, 0.2);
+  padding-top: 58px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant_title h2 {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.restaurant_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_restaurant {
+  position: relative;
+  height: 253px;
+  width: 335px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: black;
+  margin-bottom: 19px;
+}
+.card_restaurant img {
+  width: 335px;
+  height: 173px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.news {
+  position: absolute;
+  left: 245px;
+  top: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #A3E4D7;
+  color: #17a589;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+}
+
+.card_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 340px;
+  margin: 20px 5px;
+  font-family: "Roboto", sans-serif;
+}
+.card_description h3 {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
