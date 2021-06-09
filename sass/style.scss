@@ -241,3 +241,18 @@ a {
     font-weight: 600;
   }
 }
+
+//  ----- Footer ----- // 
+
+.footer {
+  background-color: #212f3d;
+  width: 100%;
+  color: #fff;
+
+  h4 {
+    font-family: $text-title;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 30px;
+  }
+}

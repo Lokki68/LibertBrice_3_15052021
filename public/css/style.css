@@ -256,4 +256,16 @@ a {
   font-weight: 600;
 }
 
+.footer {
+  background-color: #212f3d;
+  width: 100%;
+  color: #fff;
+}
+.footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 15px;
+  padding-left: 25px;
+  padding-top: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
