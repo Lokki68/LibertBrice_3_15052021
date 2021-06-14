@@ -1,0 +1,34 @@
+//  ----- Footer ----- // 
+
+.footer {
+  background-color: #212f3d;
+  width: 100%;
+  height: 198px;
+  color: #fff;
+
+  h4 {
+    font-family: $text-title;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 30px;
+  }
+
+  &_ul {
+    margin-top: 30px;
+    margin-left: 25px;
+    }
+
+    & li {
+      display: flex;
+      flex-direction: row;
+      
+      & i{
+      margin-right: 10px;
+      }
+
+      //alignement du premier p
+      & .first{ 
+        padding-left: 8px;
+      }
+    }
+}

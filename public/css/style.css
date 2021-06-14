@@ -42,6 +42,11 @@ td, th {
   padding: 0;
 }
 
+body {
+  max-width: 1550px;
+  min-width: 375px;
+}
+
 .header {
   font-family: "Shrikhand", sans-serif;
   height: 400px;
@@ -195,6 +200,7 @@ a {
 .restaurant {
   background-color: rgba(227, 223, 222, 0.2);
   padding-top: 58px;
+  padding-bottom: 67px;
   display: flex;
   flex-direction: column;
 }
@@ -219,6 +225,7 @@ a {
   background-color: #fff;
   color: black;
   margin-bottom: 19px;
+  box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
 }
 .card_restaurant img {
   width: 335px;
@@ -259,6 +266,7 @@ a {
 .footer {
   background-color: #212f3d;
   width: 100%;
+  height: 198px;
   color: #fff;
 }
 .footer h4 {
@@ -266,6 +274,43 @@ a {
   font-size: 15px;
   padding-left: 25px;
   padding-top: 30px;
+}
+.footer_ul {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.footer li {
+  display: flex;
+  flex-direction: row;
+}
+.footer li i {
+  margin-right: 10px;
+}
+.footer li .first {
+  padding-left: 8px;
+}
+
+.loader {
+  border: 16px solid #F3F3F3;
+  border-top: 16px solid #99E2D0;
+  border-bottom: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-heart:hover {
+  cursor: pointer;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
