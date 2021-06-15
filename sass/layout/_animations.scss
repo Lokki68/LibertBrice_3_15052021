@@ -1,19 +1,112 @@
 // Loader
+$colors:
+  $primary-color
+  $secondary-color
+  $tertiary-color
+  $icone-base ;
+$size: 3.5em;
+$thickness: 0.5em;
+
+// Calcul variables.
+$lat: ($size - $thickness) / 2;
+$offset: $lat - $thickness;
+
 .loader {
-    border: 16px solid #F3F3F3;
-    border-top: 16px solid #99E2D0;
-    border-bottom: 16px solid #9356DC;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+  position: relative;
+  width: $size;
+  height: $size;
+  transform: rotate(165deg);
+  
+  &:before,
+  &:after {
+    content: '  ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: $thickness;
+    height: $thickness;
+    border-radius: $thickness / 2;
+    transform: translate(-50%, -50%);
+  }
+  
+  &:before {
+    animation: before 2s infinite;
+  }
+  
+  &:after {
+    animation: after 2s infinite;
+  }
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+@keyframes before {
+  0% {
+    width: $thickness;
+    box-shadow:
+      $lat (-$offset) nth($colors, 1),
+      (-$lat) $offset nth($colors, 3);
+  }
+  35% {
+    width: $size;
+    box-shadow:
+      0 (-$offset) nth($colors, 1),
+      0   $offset  nth($colors, 3);
+  }
+  70% {
+    width: $thickness;
+    box-shadow:
+      (-$lat) (-$offset) nth($colors, 1),
+      $lat $offset nth($colors, 3);
+  }
+  100% {
+    box-shadow:
+      $lat (-$offset) nth($colors, 1),
+      (-$lat) $offset nth($colors, 3);
+  }
 }
 
+@keyframes after {
+  0% {
+    height: $thickness;
+    box-shadow:
+      $offset $lat nth($colors, 2),
+      (-$offset) (-$lat) nth($colors, 4);
+  }
+  35% {
+    height: $size;
+    box-shadow:
+        $offset  0 nth($colors, 2),
+      (-$offset) 0 nth($colors, 4);
+  }
+  70% {
+    height: $thickness;
+    box-shadow:
+      $offset (-$lat) nth($colors, 2),
+      (-$offset) $lat nth($colors, 4);
+  }
+  100% {
+    box-shadow:
+      $offset $lat nth($colors, 2),
+      (-$offset) (-$lat) nth($colors, 4);
+  }
+}
+
+
+
+/**
+ * Attempt to center the whole thing!
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - #{$size / 2});
+  left: calc(50% - #{$size / 2});
+}
 
 // Animation Heart
 .description_hearts {

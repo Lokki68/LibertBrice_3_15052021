@@ -290,23 +290,77 @@ a {
 }
 
 .loader {
-  border: 16px solid #F3F3F3;
-  border-top: 16px solid #99E2D0;
-  border-bottom: 16px solid #9356DC;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+  position: relative;
+  width: 3.5em;
+  height: 3.5em;
+  transform: rotate(165deg);
+}
+.loader:before, .loader:after {
+  content: "  ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.loader:before {
+  animation: before 2s infinite;
+}
+.loader:after {
+  animation: after 2s infinite;
 }
 
-@keyframes spin {
+@keyframes before {
   0% {
-    transform: rotate(0deg);
+    width: 0.5em;
+    box-shadow: 1.5em -1em #9356dc, -1.5em 1em #99e2d0;
+  }
+  35% {
+    width: 3.5em;
+    box-shadow: 0 -1em #9356dc, 0 1em #99e2d0;
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1.5em -1em #9356dc, 1.5em 1em #99e2d0;
   }
   100% {
-    transform: rotate(360deg);
+    box-shadow: 1.5em -1em #9356dc, -1.5em 1em #99e2d0;
   }
 }
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 1em 1.5em #ff79da, -1em -1.5em grey;
+  }
+  35% {
+    height: 3.5em;
+    box-shadow: 1em 0 #ff79da, -1em 0 grey;
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 1em -1.5em #ff79da, -1em 1.5em grey;
+  }
+  100% {
+    box-shadow: 1em 1.5em #ff79da, -1em -1.5em grey;
+  }
+}
+/**
+ * Attempt to center the whole thing!
+ */
+html,
+body {
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 1.75em);
+  left: calc(50% - 1.75em);
+}
+
 .description_hearts {
   position: relative;
   width: 20px;
