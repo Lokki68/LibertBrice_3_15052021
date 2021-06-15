@@ -15,10 +15,41 @@
 }
 
 
-// heart over
+// Animation Heart
+.description_hearts {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
 
-.fa-heart:hover {
-    cursor: pointer;
-    color: #9356DC;
-    
+  &--heart {
+    position: absolute;
+    font-size: 25px;
+    transition: all 1s linear;
+  
+    &.vide {
+      opacity: 1;
+      color: black;
+    }
+
+    &.plein {
+      opacity: 0;
+      background: -webkit-linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  }
+
+  &:hover {
+    .description_hearts--heart {
+      &.vide {
+        opacity: 0;
+      }
+
+      &.plein {
+        opacity: 1;
+      }
+    }
+  }
 }

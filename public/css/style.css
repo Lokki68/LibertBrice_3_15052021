@@ -121,8 +121,7 @@ a {
   color: #fff;
   height: 50px;
   width: 218px;
-  background: #ff79da;
-  background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(160deg, #ff79da, #9356dc);
   border: none;
   border-radius: 25px;
   margin-top: 25px;
@@ -255,8 +254,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 340px;
-  margin: 20px 5px;
+  height: 77px;
+  padding: 20px 5px;
   font-family: "Roboto", sans-serif;
 }
 .card_description h3 {
@@ -308,9 +307,33 @@ a {
     transform: rotate(360deg);
   }
 }
-.fa-heart:hover {
+.description_hearts {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
   cursor: pointer;
-  color: #9356DC;
+}
+.description_hearts--heart {
+  position: absolute;
+  font-size: 25px;
+  transition: all 1s linear;
+}
+.description_hearts--heart.vide {
+  opacity: 1;
+  color: black;
+}
+.description_hearts--heart.plein {
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.description_hearts:hover .description_hearts--heart.vide {
+  opacity: 0;
+}
+.description_hearts:hover .description_hearts--heart.plein {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

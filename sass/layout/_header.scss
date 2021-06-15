@@ -80,12 +80,11 @@ a {
     color: #fff;
     height: 50px;
     width: 218px;
-    background: $secondary-color;
     background: linear-gradient(
-      160deg,
-      $secondary-color 0%,
-      $primary-color 100%
-    );
+      160deg, 
+      $secondary-color , 
+      $primary-color
+      ); 
     border: none;
     border-radius: 25px;
     margin-top: 25px;

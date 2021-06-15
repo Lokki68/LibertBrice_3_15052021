@@ -133,10 +133,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 340px;
-  margin: 20px 5px;
+  height: 77px;
+  padding: 20px 5px;
   font-family: $text-principal;
   & h3 {
     font-weight: 600;
   }
 }
+
