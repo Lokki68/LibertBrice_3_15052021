@@ -44,6 +44,7 @@
   padding-right: 2em;
   color: $icone-base;
   }
+  animation: slideDown 2s;
 }
 
 .card:hover{
@@ -112,6 +113,11 @@
     border-top-right-radius: 15px;
     object-fit: cover;
   }
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+  animation: slideDown 2s;
 }
 
 .news {

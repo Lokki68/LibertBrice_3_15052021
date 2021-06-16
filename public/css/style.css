@@ -85,7 +85,7 @@ input:focus {
   outline: none;
 }
 
-a {
+.presentation_button a {
   text-decoration: none;
   color: #fff;
 }
@@ -163,6 +163,7 @@ a {
   border-radius: 20px;
   background-color: rgba(227, 223, 222, 0.2);
   box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
+  animation: slideDown 2s;
 }
 .card_fonctionnement i {
   padding-left: 2em;
@@ -225,6 +226,7 @@ a {
   color: black;
   margin-bottom: 19px;
   box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
+  animation: slideDown 2s;
 }
 .card_restaurant img {
   width: 335px;
@@ -232,6 +234,10 @@ a {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+}
+.card_restaurant a {
+  text-decoration: none;
+  color: black;
 }
 
 .news {
@@ -307,10 +313,10 @@ a {
   transform: translate(-50%, -50%);
 }
 .loader:before {
-  animation: before 2s infinite;
+  animation: before 2s 3;
 }
 .loader:after {
-  animation: after 2s infinite;
+  animation: after 2s 3;
 }
 
 @keyframes before {
@@ -347,16 +353,13 @@ a {
     box-shadow: 1em 1.5em #ff79da, -1em -1.5em grey;
   }
 }
-/**
- * Attempt to center the whole thing!
- */
 html,
 body {
   height: 100%;
 }
 
 .loader {
-  position: absolute;
+  position: absoute;
   top: calc(50% - 1.75em);
   left: calc(50% - 1.75em);
 }
@@ -388,6 +391,17 @@ body {
 }
 .description_hearts:hover .description_hearts--heart.plein {
   opacity: 1;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

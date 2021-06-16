@@ -31,11 +31,11 @@ $offset: $lat - $thickness;
   }
   
   &:before {
-    animation: before 2s infinite;
+   animation: before 2s 3;
   }
   
   &:after {
-    animation: after 2s infinite;
+    animation: after 2s 3;
   }
 }
 
@@ -91,11 +91,7 @@ $offset: $lat - $thickness;
   }
 }
 
-
-
-/**
- * Attempt to center the whole thing!
- */
+//  Center Loader
 
 html,
 body {
@@ -103,12 +99,12 @@ body {
 }
 
 .loader {
-  position: absolute;
+  position: absoute;
   top: calc(50% - #{$size / 2});
   left: calc(50% - #{$size / 2});
 }
 
-// Animation Heart
+// ---------Animation Heart---------//
 .description_hearts {
   position: relative;
   width: 20px;
@@ -145,4 +141,18 @@ body {
       }
     }
   }
+}
+
+// ---------Apparition Carte---------//
+
+@keyframes slideDown {
+
+    from {
+        transform: translateY(25px);
+        opacity:0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
