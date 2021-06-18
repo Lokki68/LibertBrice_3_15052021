@@ -1,8 +1,20 @@
+.main_menu {
+  background-color: green;
+  padding-top: 50px;
+  margin-top: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  z-index: 1;
+}
+
 .main_title {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   & h1 {
     font-family: $text-title, serif;
+    font-weight: 400;
+    font-size: 30px;
   }
 }
