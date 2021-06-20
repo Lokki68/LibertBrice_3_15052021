@@ -1,122 +1,77 @@
 // Loader
-$colors:
-  $primary-color
-  $secondary-color
-  $tertiary-color
-  $icone-base ;
-$size: 3.5em;
-$thickness: 0.5em;
-
-// Calcul variables.
-$lat: ($size - $thickness) / 2;
-$offset: $lat - $thickness;
-
-
-
 .loader {
-  position: relative;
-  width: $size;
-  height: $size;
-  transform: rotate(165deg);
-  z-index: 100;
-  
-  
-  &:before,
-  &:after {
-    content: '  ';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: $thickness;
-    height: $thickness;
-    border-radius: $thickness / 2;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  animation: fader;
+  animation-duration: 5s;
+}
+
+.lettre {
+  color: $primary-color;
+  font-family: $text-title, serif;
+  font-size : 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: $secondary-color;
+    text-shadow: 0 0 7px $secondary-color;
   }
-  
-  &:before {
-   animation: before 2s 3;
+
+  90% {
+    color: $primary-color;
+    text-shadow: none;
   }
-  
-  &:after {
-    animation: after 2s 3;
+
+  100% {
+    color: $secondary-color;
+    text-shadow: 0 0 7px $secondary-color;
   }
 }
 
 @keyframes fader {
-    from{
-       visibility: visible;
-    }
-    to{
-      visibility: none;
-    }
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  } 
 }
 
-@keyframes before {
-  0% {
-    width: $thickness;
-    box-shadow:
-      $lat (-$offset) nth($colors, 1),
-      (-$lat) $offset nth($colors, 3);
-  }
-  35% {
-    width: $size;
-    box-shadow:
-      0 (-$offset) nth($colors, 1),
-      0   $offset  nth($colors, 3);
-  }
-  70% {
-    width: $thickness;
-    box-shadow:
-      (-$lat) (-$offset) nth($colors, 1),
-      $lat $offset nth($colors, 3);
-  }
-  100% {
-    box-shadow:
-      $lat (-$offset) nth($colors, 1),
-      (-$lat) $offset nth($colors, 3);
-  }
+.lettre:nth-child(1) {
+  animation-delay: .1s;
 }
-
-@keyframes after {
-  0% {
-    height: $thickness;
-    box-shadow:
-      $offset $lat nth($colors, 2),
-      (-$offset) (-$lat) nth($colors, 4);
-  }
-  35% {
-    height: $size;
-    box-shadow:
-        $offset  0 nth($colors, 2),
-      (-$offset) 0 nth($colors, 4);
-  }
-  70% {
-    height: $thickness;
-    box-shadow:
-      $offset (-$lat) nth($colors, 2),
-      (-$offset) $lat nth($colors, 4);
-  }
-  100% {
-    box-shadow:
-      $offset $lat nth($colors, 2),
-      (-$offset) (-$lat) nth($colors, 4);
-  }
+.lettre:nth-child(2) {
+  animation-delay: .2s;
 }
-
-//  Center Loader
-
-html,
-body {
-  height: 100%;
+.lettre:nth-child(3) {
+  animation-delay: .3s;
 }
-
-
-
-.loader {
-  position: absolute;
-  top: calc(50% - #{$size / 2});
-  left: calc(50% - #{$size / 2});
+.lettre:nth-child(4) {
+  animation-delay: .4s;
+}
+.lettre:nth-child(5) {
+  animation-delay: .5s;
+}
+.lettre:nth-child(6) {
+  animation-delay: .6s;
+}
+.lettre:nth-child(7) {
+  animation-delay: .7s;
+}
+.lettre:nth-child(8) {
+  animation-delay: .8s;
 }
 
 // ---------Animation Heart---------//

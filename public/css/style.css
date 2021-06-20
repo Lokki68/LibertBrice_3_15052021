@@ -351,81 +351,80 @@ input:focus {
 }
 
 .loader {
-  position: relative;
-  width: 3.5em;
-  height: 3.5em;
-  transform: rotate(165deg);
-  z-index: 100;
-}
-.loader:before, .loader:after {
-  content: "  ";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: 0.25em;
-  transform: translate(-50%, -50%);
-}
-.loader:before {
-  animation: before 2s 3;
-}
-.loader:after {
-  animation: after 2s 3;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  animation: fader;
+  animation-duration: 5s;
 }
 
+.lettre {
+  color: #9356dc;
+  font-family: "Shrikhand", sans-serif, serif;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+  90% {
+    color: #9356dc;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+}
 @keyframes fader {
   from {
-    visibility: visible;
+    opacity: 1;
   }
   to {
-    visibility: none;
+    opacity: 0;
   }
 }
-@keyframes before {
-  0% {
-    width: 0.5em;
-    box-shadow: 1.5em -1em #9356dc, -1.5em 1em #99e2d0;
-  }
-  35% {
-    width: 3.5em;
-    box-shadow: 0 -1em #9356dc, 0 1em #99e2d0;
-  }
-  70% {
-    width: 0.5em;
-    box-shadow: -1.5em -1em #9356dc, 1.5em 1em #99e2d0;
-  }
-  100% {
-    box-shadow: 1.5em -1em #9356dc, -1.5em 1em #99e2d0;
-  }
-}
-@keyframes after {
-  0% {
-    height: 0.5em;
-    box-shadow: 1em 1.5em #ff79da, -1em -1.5em grey;
-  }
-  35% {
-    height: 3.5em;
-    box-shadow: 1em 0 #ff79da, -1em 0 grey;
-  }
-  70% {
-    height: 0.5em;
-    box-shadow: 1em -1.5em #ff79da, -1em 1.5em grey;
-  }
-  100% {
-    box-shadow: 1em 1.5em #ff79da, -1em -1.5em grey;
-  }
-}
-html,
-body {
-  height: 100%;
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
 }
 
-.loader {
-  position: absolute;
-  top: calc(50% - 1.75em);
-  left: calc(50% - 1.75em);
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
 }
 
 .description_hearts {
