@@ -209,6 +209,7 @@ container {
 }
 .header_top img {
   object-fit: cover;
+  position: relative;
 }
 .header h1 {
   font-family: "Shrikhand", sans-serif, serif;
@@ -220,12 +221,13 @@ container {
 }
 
 .main_menu {
-  background-color: green;
+  background-color: #fafafa;
+  width: 100%;
   padding-top: 50px;
-  margin-top: 0px;
+  top: 255px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  z-index: 1;
+  position: absolute;
 }
 
 .main_title {
@@ -238,6 +240,21 @@ container {
   font-family: "Shrikhand", sans-serif, serif;
   font-weight: 400;
   font-size: 30px;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  height: 50px;
+  width: 218px;
+  background: linear-gradient(160deg, #ff79da, #9356dc);
+  border: none;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+.btn:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -278,7 +295,7 @@ input:focus {
   outline: none;
 }
 
-.presentation_button a {
+.btn a {
   text-decoration: none;
   color: #fff;
 }

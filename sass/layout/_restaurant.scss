@@ -1,10 +1,11 @@
 .main_menu {
-  background-color: green;
+  background-color: rgb(250, 250, 250);
+  width: 100%;
   padding-top: 50px;
-  margin-top: 0px;
+  top: 255px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  z-index: 1;
+  position: absolute;
 }
 
 .main_title {
@@ -18,3 +19,23 @@
     font-size: 30px;
   }
 }
+
+.btn {
+  font-family: $text-principal;
+  font-weight: 600;
+  color: #fff;
+  height: 50px;
+  width: 218px;
+  background: linear-gradient(
+    160deg, 
+    $secondary-color , 
+    $primary-color
+    ); 
+    border: none;
+    border-radius: 25px;
+    margin-top: 25px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    }
