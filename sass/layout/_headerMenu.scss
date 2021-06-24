@@ -2,7 +2,8 @@
 
 
 .header{
-
+  position: relative;
+  z-index: 1;
   &_top {
     font-family: $text-title;
     width: 100%;
@@ -10,14 +11,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    z-index: 2;
 
+  }
 
   & img {
     object-fit: cover;
-    position: relative;
+
   }
-  }
+  
 
   & h1 {
     font-family: $text-title, serif;

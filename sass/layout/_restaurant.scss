@@ -1,11 +1,12 @@
 .main_menu {
   background-color: rgb(250, 250, 250);
   width: 100%;
-  padding-top: 50px;
-  top: 255px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  position: absolute;
+  position: relative;
+  padding-top: 25px;
+  top: -135px;
+  z-index: 100;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
 
 .main_title {
@@ -13,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 25px;
   & h1 {
     font-family: $text-title, serif;
     font-weight: 400;
@@ -39,3 +41,24 @@
       cursor: pointer;
     }
     }
+
+
+    //  ----- Carte Menu ---- 
+    .menu {
+      font-family: $text-principal;
+      margin-left: 15px;
+    }
+
+    .enter{
+      &_title {
+        text-transform: uppercase;
+      }
+      &_underline {
+        width: 40px;
+        margin-top: 5px;
+        text-align:center;
+        border-top: 3px solid $tertiary-color;
+        }
+    }
+
+    

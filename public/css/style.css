@@ -198,6 +198,10 @@ container {
   font-weight: 600;
 }
 
+.header {
+  position: relative;
+  z-index: 1;
+}
 .header_top {
   font-family: "Shrikhand", sans-serif;
   width: 100%;
@@ -205,11 +209,9 @@ container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  z-index: 2;
 }
-.header_top img {
+.header img {
   object-fit: cover;
-  position: relative;
 }
 .header h1 {
   font-family: "Shrikhand", sans-serif, serif;
@@ -223,11 +225,12 @@ container {
 .main_menu {
   background-color: #fafafa;
   width: 100%;
-  padding-top: 50px;
-  top: 255px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  position: absolute;
+  position: relative;
+  padding-top: 25px;
+  top: -135px;
+  z-index: 100;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
 
 .main_title {
@@ -235,6 +238,7 @@ container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 25px;
 }
 .main_title h1 {
   font-family: "Shrikhand", sans-serif, serif;
@@ -255,6 +259,21 @@ container {
 }
 .btn:hover {
   cursor: pointer;
+}
+
+.menu {
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+
+.enter_title {
+  text-transform: uppercase;
+}
+.enter_underline {
+  width: 40px;
+  margin-top: 5px;
+  text-align: center;
+  border-top: 3px solid #99e2d0;
 }
 
 .header {
@@ -384,7 +403,7 @@ input:focus {
 .lettre {
   color: #9356dc;
   font-family: "Shrikhand", sans-serif, serif;
-  font-size: 80px;
+  font-size: 35px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;
