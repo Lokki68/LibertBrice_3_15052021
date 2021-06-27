@@ -1,0 +1,45 @@
+// loader
+
+@keyframes flash {
+  0% {
+    color: $secondary-color;
+    text-shadow: 0 0 7px $secondary-color;
+  }
+
+  90% {
+    color: $primary-color;
+    text-shadow: none;
+  }
+
+  100% {
+    color: $secondary-color;
+    text-shadow: 0 0 7px $secondary-color;
+  }
+}
+
+@keyframes fader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  } 
+}
+
+// ---------Apparition Carte---------//
+
+@keyframes slideDown {
+
+    from {
+        transform: translateY(25px);
+        opacity:0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
