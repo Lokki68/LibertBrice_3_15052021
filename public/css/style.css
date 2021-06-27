@@ -223,7 +223,7 @@ container {
 }
 
 .main_menu {
-  background-color: #fafafa;
+  background-color: #e3dfde;
   width: 100%;
   position: relative;
   padding-top: 25px;
@@ -272,8 +272,20 @@ container {
 .enter_underline {
   width: 40px;
   margin-top: 5px;
+  margin-bottom: 15px;
   text-align: center;
   border-top: 3px solid #99e2d0;
+}
+
+.plat_title,
+.dessert_title {
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+.card_menu {
+  background-color: #fff;
+  margin-top: 15px;
 }
 
 .header {
