@@ -43,3 +43,13 @@
         opacity: 1;
     }
 }
+
+@keyframes rotationIcon {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

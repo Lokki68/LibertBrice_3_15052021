@@ -23,6 +23,10 @@
   }
 }
 
+.bouton {
+  display: block;
+  text-align: center;
+}
 .btn {
   font-family: $text-principal;
   font-weight: 600;
@@ -95,7 +99,7 @@
           align-items: center;
           justify-content: center;
           &-icons{
-            transform: rotateZ(360deg);
+            animation: rotationIcon .8s
           }
         }
       }
