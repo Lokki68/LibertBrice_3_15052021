@@ -206,6 +206,8 @@ container {
   font-family: "Shrikhand", sans-serif;
   width: 100%;
   height: 63px;
+  margin-left: 25px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -219,7 +221,7 @@ container {
 }
 
 .top_logo {
-  margin-left: 90px;
+  margin-left: 100px;
 }
 
 .main_menu {
