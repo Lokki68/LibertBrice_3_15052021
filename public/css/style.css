@@ -294,25 +294,27 @@ container {
   margin-top: 15px;
   margin-right: 15px;
   border-radius: 15px;
-  cursor: pointer;
-  animation: slideDown 2s;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
   box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
+  animation: slideDown 2s linear both;
 }
 .card_menu:hover .card_check {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: translate 3s;
 }
-.card_menu:hover .card_check-icon {
+.card_menu:hover .card_check-icons {
   transform: rotateZ(360deg);
 }
 
 .card_txt {
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   padding: 10px;
 }
@@ -344,13 +346,14 @@ container {
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  transition: all 0.5s linear;
   width: 100%;
   height: 100%;
 }
-.card_check-icon {
+.card_check-icons {
+  transition: all 0.5s linear;
   color: white;
   font-size: 20px;
-  transition: all 0.5s linear;
 }
 
 .header {

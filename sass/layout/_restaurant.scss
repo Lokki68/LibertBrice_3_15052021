@@ -80,20 +80,21 @@
       margin-top: 15px;
       margin-right: 15px;   
       border-radius: 15px;
-      cursor: pointer;
-      animation: slideDown 2s ;
       display: flex;
       align-items: stretch;
       justify-content: space-between;
+      overflow: hidden;
+      cursor: pointer;
       @include shadow-box;
+      animation: slideDown 2s linear both;
+
 
       &:hover {
         .card_check {
           display: flex;
           align-items: center;
           justify-content: center;
-          animation: translate 3s;
-          &-icon {
+          &-icons{
             transform: rotateZ(360deg);
           }
         }
@@ -102,6 +103,8 @@
 
     .card_txt {
       font-family: $text-principal;
+      overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
       padding: 10px;
 
@@ -136,12 +139,13 @@
       background-color: $tertiary-color;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
+      transition: all .5s linear;
       width: 100%;
       height: 100%;
-      &-icon{
+      &-icons {
+        transition: all .5s linear;
         color: white;
         font-size: 20px;
-        transition: all 0.5s linear;
       }
     }
 
