@@ -468,6 +468,10 @@ input:focus {
 .footer li i {
   margin-right: 10px;
 }
+.footer li a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer li .first {
   padding-left: 8px;
 }
@@ -508,10 +512,10 @@ input:focus {
   }
 }
 @keyframes rotationIcon {
-  from {
+  0% {
     transform: rotateZ(0deg);
   }
-  to {
+  100% {
     transform: rotateZ(360deg);
   }
 }

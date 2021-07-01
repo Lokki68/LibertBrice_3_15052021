@@ -26,6 +26,11 @@
       margin-right: 10px;
       }
 
+      & a {
+        text-decoration: none;
+        color: inherit;
+      }
+
       //alignement du premier p
       & .first{ 
         padding-left: 8px;

@@ -46,10 +46,10 @@
 
 @keyframes rotationIcon {
 
-    from {
+    0% {
         transform: rotateZ(0deg);
     }
-    to {
+    100% {
         transform: rotateZ(360deg);
     }
 }
