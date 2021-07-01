@@ -3,17 +3,18 @@
 @keyframes flash {
   0% {
     color: $secondary-color;
-    text-shadow: 0 0 7px $secondary-color;
+    text-shadow: 0 0 10px $tertiary-color;
   }
 
-  90% {
-    color: $primary-color;
+  50% {
+    color: $secondary-color;
+    font-size: 30px;
     text-shadow: none;
   }
 
   100% {
-    color: $secondary-color;
-    text-shadow: 0 0 7px $secondary-color;
+    color: $primary-color;
+    text-shadow: 0 0 10px $tertiary-color;
   }
 }
 
