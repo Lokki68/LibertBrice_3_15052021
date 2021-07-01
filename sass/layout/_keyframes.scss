@@ -53,3 +53,13 @@
         transform: rotateZ(360deg);
     }
 }
+
+@keyframes slideBack {
+
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(57px);
+    }
+}

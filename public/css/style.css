@@ -310,9 +310,8 @@ container {
   animation: slideDown 2s linear both;
 }
 .card_menu:hover .card_check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 57px;
+  animation: slideBack 0.1s linear;
 }
 .card_menu:hover .card_check-icons {
   animation: rotationIcon 0.8s;
@@ -347,14 +346,14 @@ container {
 }
 
 .card_check {
-  display: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   transition: all 0.5s linear;
-  width: 100%;
+  width: 0;
   height: 100%;
 }
 .card_check-icons {
@@ -514,6 +513,14 @@ input:focus {
   }
   to {
     transform: rotateZ(360deg);
+  }
+}
+@keyframes slideBack {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(57px);
   }
 }
 .loader {

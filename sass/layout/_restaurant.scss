@@ -95,9 +95,8 @@
 
       &:hover {
         .card_check {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          width: 57px;
+          animation: slideBack .1s linear;
           &-icons{
             animation: rotationIcon .8s
           }
@@ -137,14 +136,14 @@
     }
 
     .card_check {
-      display: none;
-      padding-left: 20px;
-      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: $tertiary-color;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       transition: all .5s linear;
-      width: 100%;
+      width: 0;
       height: 100%;
       &-icons {
         transition: all .5s linear;
