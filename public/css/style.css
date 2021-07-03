@@ -221,7 +221,7 @@ container {
 }
 
 .top_logo {
-  margin-left: 100px;
+  margin-left: 65px;
 }
 
 .main_menu {
@@ -233,6 +233,7 @@ container {
   z-index: 100;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  padding-bottom: 65px;
 }
 
 .main_title {
@@ -362,6 +363,10 @@ container {
   font-size: 20px;
 }
 
+.footer_menu {
+  margin-top: -135px;
+}
+
 .header {
   font-family: "Shrikhand", sans-serif;
   height: 400px;
@@ -447,7 +452,7 @@ input:focus {
 
 .footer {
   background-color: #212f3d;
-  width: 100%;
+  width: auto;
   height: 198px;
   color: #fff;
 }
@@ -545,15 +550,15 @@ input:focus {
 .lettre {
   color: #9356dc;
   font-family: "Shrikhand", sans-serif, serif;
-  font-size: 45px;
-  letter-spacing: 15px;
+  font-size: 25px;
+  letter-spacing: 10px;
   margin-bottom: 1px;
   animation: flash 2s linear infinite;
 }
 
 .lettre:nth-child(1) {
   animation-delay: 0.1s;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .lettre:nth-child(2) {
@@ -562,7 +567,7 @@ input:focus {
 
 .lettre:nth-child(3) {
   animation-delay: 0.5s;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .lettre:nth-child(4) {
@@ -571,7 +576,7 @@ input:focus {
 
 .lettre:nth-child(5) {
   animation-delay: 0.9s;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .lettre:nth-child(6) {
