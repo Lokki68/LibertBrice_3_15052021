@@ -250,8 +250,9 @@ container {
 }
 
 .bouton {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .btn {
@@ -328,9 +329,13 @@ container {
 .card_txt h3 {
   font-weight: 600;
   font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card_txt p {
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card_detail {

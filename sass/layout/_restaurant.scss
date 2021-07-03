@@ -24,8 +24,9 @@
 }
 
 .bouton {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 .btn {
   font-family: $text-principal;
@@ -114,10 +115,14 @@
       & h3 {
         font-weight: 600;
         font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       & p{
         font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
