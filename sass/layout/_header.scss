@@ -91,6 +91,7 @@ input:focus {
 
     &:hover {
       cursor: pointer;
+      @include shadow-box
     }
   }
 }

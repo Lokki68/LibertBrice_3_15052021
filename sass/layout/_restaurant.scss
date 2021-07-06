@@ -45,6 +45,7 @@
 
     &:hover {
       cursor: pointer;
+      @include shadow-box;
     }
     }
 

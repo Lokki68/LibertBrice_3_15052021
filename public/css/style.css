@@ -204,13 +204,13 @@ container {
 }
 .header_top {
   font-family: "Shrikhand", sans-serif;
-  width: 100%;
+  width: 95%;
   height: 63px;
-  margin-left: 25px;
   font-size: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: start;
 }
 .header img {
   object-fit: cover;
@@ -268,6 +268,7 @@ container {
 }
 .btn:hover {
   cursor: pointer;
+  box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
 }
 
 .menu {
@@ -453,6 +454,7 @@ input:focus {
 }
 .presentation_button:hover {
   cursor: pointer;
+  box-shadow: 5px 5px 35px -17px rgba(0, 0, 0, 0.55);
 }
 
 .footer {
