@@ -13,6 +13,7 @@
   align-items: center;
   animation: fader;
   animation-duration: 8s;
+  animation-iteration-count: 1;
 }
 
 .lettre {
@@ -21,7 +22,7 @@
   font-size : 25px;
   letter-spacing: 10px;
   margin-bottom: 1px;
-  animation: flash 2s linear infinite;
+  animation: flash 2s linear 4;
 }
 
 
