@@ -2,15 +2,142 @@
 
 @media screen and (min-width: 768px) {
 
-  // header index
+  //  ------------- index -------------- //
+  
+  // header
 
+  .header {
+    width: 100%;
+    height: 350px;
 
+    & img {
+      height: 350px;
+      width: 100%;
+    }
+  }
 
+  .presentation {
+    width: 100%;
+  }
 
+  // fonctionnement
+  .fonctionnement {
+    margin: 35px 0;
+    height: auto;
+  }
+  .fonctionnement_card{
+    flex-direction: row;
+    margin: 0 5px;
+  }
+
+  //  restaurant
+
+    .restaurant {
+      margin: 35px 0;
+      padding: 0;
+      height: auto;
+    }
+
+    .restaurant_card {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+  //  ------------- menu -------------- //
   // header menu
   .header_top {
     justify-content: center;
-    height: ;
+  }
+}
+
+//  Média laptop 1024 px
+
+@media screen and (min-width: 1024px) {
+
+  //  ------------- index -------------- //
+
+  //  main
+  .main_index {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
+  //  fonctionnement
+
+  .fonctionnement {
+    background-color: $back-section-grey;
+    margin: 0;
+  }
+
+  .fonctionnement_title {
+    padding-top: 35px;
+  }
+
+  .fonctionnement_card {
+    flex-direction: column;
+  }
+
+  //  restaurant
+
+  .restaurant {
+    background-color: #fff;
+  }
+
+  .card_restaurant {
+    width: 600px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  .news {
+    left: 500px;
+  }
+
+  //  ------------- menu -------------- //
+.main-title {
+  justify-content: space-evenly;
+}
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .plat_title {
+    margin-top: 0;
+  }
+
+    .card_menu {
+      width: 450px;
+    }
+  
+}
+
+
+//  Média desktop 1410 px
+
+@media screen and (min-width: 1410px) {
+
+  //  ------------- index -------------- //
+
+  //  restaurant
+
+  .card_restaurant {
+    width: 700px;
+  }
+  //  ------------- menu -------------- //
+
+  .menu_enter,
+  .menu_plat {
+    margin-top: 35px;
+  }
+  
+  
+  .menu_dessert {
+    margin-top: 0;
+  }
 }

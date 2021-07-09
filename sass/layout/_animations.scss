@@ -2,24 +2,23 @@
 
 // Loader
 .loader {
-  position: absolute;
+  position: fixed;
   opacity: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(80, 71, 71, .8);
+  width: 0%;
+  height: 0%;
+  background-color: rgba(0,0,0, .9);
   display: flex;
   z-index: 10;
   justify-content: center;
   align-items: center;
-  animation: fader;
-  animation-duration: 8s;
-  animation-iteration-count: 1;
+  animation: fader 8s 1;
+  overflow: hidden;
 }
 
 .lettre {
   color: $primary-color;
   font-family: $text-title, serif;
-  font-size : 25px;
+  font-size : 45px;
   letter-spacing: 10px;
   margin-bottom: 1px;
   animation: flash 2s linear 4;

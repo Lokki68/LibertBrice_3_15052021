@@ -100,6 +100,11 @@ container {
   padding-right: 2em;
   color: grey;
 }
+.card_fonctionnement:hover {
+  cursor: pointer;
+  background-color: #ebe1f7;
+  box-shadow: 8px 8px 35px -17px #9356dc;
+}
 
 .card:hover {
   background-color: #ebe1f7;
@@ -168,6 +173,9 @@ container {
 .card_restaurant a {
   text-decoration: none;
   color: black;
+}
+.card_restaurant:hover {
+  box-shadow: 8px 8px 35px -17px #9356dc;
 }
 
 .news {
@@ -420,6 +428,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   background: rgba(227, 223, 222, 0.2);
   padding-bottom: 3em;
 }
@@ -505,13 +514,19 @@ input:focus {
 }
 @keyframes fader {
   0% {
+    width: 100%;
+    height: 100%;
     opacity: 1;
   }
-  50% {
+  60% {
+    width: 100%;
+    height: 100%;
     opacity: 1;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
+    transform: scale(0);
   }
 }
 @keyframes slideDown {
@@ -541,24 +556,23 @@ input:focus {
   }
 }
 .loader {
-  position: absolute;
+  position: fixed;
   opacity: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(80, 71, 71, 0.8);
+  width: 0%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   z-index: 10;
   justify-content: center;
   align-items: center;
-  animation: fader;
-  animation-duration: 8s;
-  animation-iteration-count: 1;
+  animation: fader 8s 1;
+  overflow: hidden;
 }
 
 .lettre {
   color: #9356dc;
   font-family: "Shrikhand", sans-serif, serif;
-  font-size: 25px;
+  font-size: 45px;
   letter-spacing: 10px;
   margin-bottom: 1px;
   animation: flash 2s linear 4;
@@ -646,6 +660,113 @@ input:focus {
 
 .card_menu:nth-child(5) {
   animation-delay: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+    height: 350px;
+  }
+  .header img {
+    height: 350px;
+    width: 100%;
+  }
+
+  .presentation {
+    width: 100%;
+  }
+
+  .fonctionnement {
+    margin: 35px 0;
+    height: auto;
+  }
+
+  .fonctionnement_card {
+    flex-direction: row;
+    margin: 0 5px;
+  }
+
+  .restaurant {
+    margin: 35px 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .restaurant_card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .header_top {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main_index {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .fonctionnement {
+    background-color: rgba(227, 223, 222, 0.2);
+    margin: 0;
+  }
+
+  .fonctionnement_title {
+    padding-top: 35px;
+  }
+
+  .fonctionnement_card {
+    flex-direction: column;
+  }
+
+  .restaurant {
+    background-color: #fff;
+  }
+
+  .card_restaurant {
+    width: 600px;
+  }
+  .card_restaurant img {
+    width: 100%;
+  }
+
+  .news {
+    left: 500px;
+  }
+
+  .main-title {
+    justify-content: space-evenly;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .plat_title {
+    margin-top: 0;
+  }
+
+  .card_menu {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .card_restaurant {
+    width: 700px;
+  }
+
+  .menu_enter,
+.menu_plat {
+    margin-top: 35px;
+  }
+
+  .menu_dessert {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
